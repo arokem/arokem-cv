@@ -1,0 +1,174 @@
+
+\documentclass[11pt,fullpage]{article}
+
+\usepackage{cite}
+\usepackage{bibentry}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{fontspec}
+\setmainfont{Helvetica}
+\nobibliography*
+\bibliographystyle{apalike}
+
+% Palatino font
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\def\name{Ariel Rokem}
+
+\reversemarginpar
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+%\bibliographystyle{apalike}
+
+% Print name centered and bold:
+\centerline{\Large \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.50\linewidth}
+  WRF Data Science Studio\\
+  Physics/Astronomy Tower, 6th Floor\\
+  3910 15th Ave NE\\
+  Campus Box 351570\\
+  Seattle, WA 98105\\
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +1-510-3876264 \\
+    Email: & \href{mailto:arokem@gmail.com}{mailto:arokem@gmail.com} \\
+    Homepage: & \href{http://arokem.org/}{www.arokem.org} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Work Experience}
+\begin{tabular}{ll}
+  2015 -  & {\bf University of Washington eScience Institute}\\
+  & \emph{Senior Data Scientist}\\
+  2011-2015 & {\bf Stanford University}\\
+  & \emph{Postdoctoral Researcher}\\
+  2010-2011 & {\bf University of California, Berkeley}\\
+  & \emph{Postdoctoral Researcher}\\
+  2002-2003 & {\bf Humboldt University, Berlin}\\
+  & \emph{Research Student}\\
+
+\end{tabular}
+
+\section*{Education}
+
+\begin{tabular}{ll}
+	2010 & {\bf Ph.D. } Neuroscience, University of California, Berkeley \\
+	2005 & {\bf M.A.} Cognitive Psychology, Hebrew University of Jerusalem \\
+	2002 & {\bf B.Sc.} Biology and Psychology, Hebrew University of Jerusalem \\
+\end{tabular}
+
+\section*{Funded research}
+\begin{tabular}{llp{12cm}}
+  2015-2020 & \$201,822 & NSF BDHUB: A Big Data Innovation Hub for the Western United States (co-PI).\\
+  2012-2015 & \$155,346 & NIH F32: The Anatomical Basis of Texture Perception in Central and Peripheral Visual Field (PI). \\
+  2009-2010 &  \$22,253 & Neural Mechanisms of Perceptual Learning, NRSA predoctoral fellowship (F31), NIH (PI).\\
+\end{tabular}
+
+
+\section*{Publications}
+
+\setlength{\extrarowheight}{10pt}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2015 & \bibentry{Rokem2015PLoS}\\
+  & \bibentry{Takemura2015CerCor}\\
+  2014&\bibentry{Zheng2014NIPS}\\
+  & \bibentry{Yeatman2014PNAS}\\
+  & \bibentry{Pestilli2014NatMeth}\\
+  & \bibentry{Garyfallidis2014FrontNeuroinf}\\
+  & \bibentry{McDevitt2014VisRes}\\
+  2013 & \bibentry{Kay2013FrontNeurosci}\\
+  & \bibentry{Yoon2013FrontPsychol}\\
+  & \bibentry{Rokem2013FrontCompNeurosci}\\
+  & \bibentry{Kay2013PLoSCompBiol}\\
+  2012 & \bibentry{Kosovicheva2012FrontBehavNeurosci}\\
+  & \bibentry{Rokem2012CerCor}\\
+  2011 & \bibentry{Rokem2011FrontHumNeurosci}\\
+  2010 & \bibentry{Rokem2010CurrBiol}\\
+  & \bibentry{Rokem2010Neuropsychpharmacology}\\
+  & \bibentry{Yoon2010JNeurosci}\\
+  2009 & \bibentry{Eyherabide2009FrontNeurosci}\\
+  & \bibentry{Yoon2009SchizBull}\\
+  & \bibentry{Rokem2009BrainRes}\\
+  & \bibentry{Rokem2009Neuropsych}\\
+  2008 & \bibentry{Eyherabide2008FrontCompNeurosci}\\
+  2006 & \bibentry{Rokem2006JNeurophysiol}\\
+\end{longtable}
+
+\section*{Manuscripts in review/preparation}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+%& \bibentry{RokemJoVWMM}
+\end{longtable}
+
+\section*{Conference presentations}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2015 & \\
+\end{longtable}
+
+\section*{Conference presentations}
+\begin{longtable}{p{0.5in}|p{5.5in}}
+  2015 & Statistical learning in DIPY. Talk presented at the 2015 Scientitfic Computing in Python meeting, Austin, TX and at PyData NW, Redmond, WA\\
+
+\end{longtable}
+
+
+%\section*{Service}
+
+%\begin{tabular}{>{\everypar{\hangindent0.5in}}p{6in}}
+%Something&Something\\
+%\end{tabular}
+
+% Footer
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today
+  \end{footnotesize}
+\end{center}
+
+\nobibliography{arokemCV}
+\end{document}
