@@ -1,0 +1,228 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Albert Einstein - vita},pdfauthor={Ariel Rokem}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+
+
+%-------------------------------------------------------------------------------%	FONT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+\usepackage{cite}
+\usepackage{bibentry}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{fontspec}
+\setmainfont{Helvetica}
+\nobibliography*
+\bibliographystyle{apalike}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Ariel Rokem}\\[1cm] % Your name
+
+\section*{Contact information}
+
+\begin{minipage}{0.50\linewidth}
+  WRF Data Science Studio\\
+  Physics/Astronomy Tower, 6th Floor\\
+  3910 15th Ave NE\\
+  Campus Box 351570\\
+  Seattle, WA 98105\\
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +1-510-3876264 \\
+    Email: & \href{mailto:arokem@gmail.com}{mailto:arokem@gmail.com} \\
+    Homepage: & \href{http://arokem.org/}{www.arokem.org} \\
+    Orcid ID: & \href{http://orcid.org/0000-0003-0679-1985}{0000-0003-0679-1985} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Work Experience}
+
+\begin{tabular}{ll}
+  2015 -  & {\bf University of Washington eScience Institute}\\
+  & \emph{Senior Data Scientist}\\
+  2011-2015 & {\bf Stanford University}\\
+  & \emph{Postdoctoral Researcher}\\
+  2010-2011 & {\bf University of California, Berkeley}\\
+  & \emph{Postdoctoral Researcher}\\
+  2002-2003 & {\bf Humboldt University, Berlin}\\
+  & \emph{Research Student}\\
+
+\end{tabular}
+
+
+%-------------------------------------------------------------------------------%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section*{Education}
+
+\begin{tabular}{ll}
+	2010 & {\bf Ph.D. } Neuroscience, University of California, Berkeley \\
+	2005 & {\bf M.A.} Cognitive Psychology, Hebrew University of Jerusalem \\
+	2002 & {\bf B.Sc.} Biology and Psychology, Hebrew University of Jerusalem \\
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS SECTION
+%-------------------------------------------------------------------------------
+\section*{Publications}
+
+\subsection*{Journal articles}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+  2017  & \bibentry{beyeler2017scipy} \\
+  & \bibentry{lee2017deep} \\
+  & \bibentry{holdgraf2017portable} \\
+  & \bibentry{beyeler2017learning} \\
+  & \bibentry{henriques2017re} \\
+  & \bibentry{Ferizi2017diffusion} \\
+  & \bibentry{Rokem2017JoVWM} \\
+  2016 & \bibentry{DeSimone2016} \\
+  & \bibentry{Cameron_Craddock2016-wc} \\
+  & \bibentry{Gorgolewski2016bids} \\
+  & \bibentry{MezerCoils}\\
+  & \bibentry{Tian2016QSpace}\\
+  2015  & \bibentry{AjinaBlindsight}\\
+  & \bibentry{RokemDSSG}\\
+  & \bibentry{Rokem2015PLoS}\\
+  & \bibentry{Takemura2015CerCor}\\
+  2014&\bibentry{Zheng2014NIPS}\\
+  & \bibentry{Yeatman2014PNAS}\\
+  & \bibentry{Pestilli2014NatMeth}\\
+  & \bibentry{Garyfallidis2014FrontNeuroinf}\\
+  & \bibentry{McDevitt2014VisRes}\\
+  2013 & \bibentry{Kay2013FrontNeurosci}\\
+  & \bibentry{Yoon2013FrontPsychol}\\
+  & \bibentry{Rokem2013FrontCompNeurosci}\\
+  & \bibentry{Kay2013PLoSCompBiol}\\
+  2012 & \bibentry{Kosovicheva2012FrontBehavNeurosci}\\
+  & \bibentry{Rokem2012CerCor}\\
+  2011 & \bibentry{Rokem2011FrontHumNeurosci}\\
+  2010 & \bibentry{Rokem2010CurrBiol}\\
+  & \bibentry{Rokem2010Neuropsychpharmacology}\\
+  & \bibentry{Yoon2010JNeurosci}\\
+  2009 & \bibentry{Eyherabide2009FrontNeurosci}\\
+  & \bibentry{Rokem2009Scipy}\\
+  & \bibentry{Yoon2009SchizBull}\\
+  & \bibentry{Rokem2009BrainRes}\\
+  & \bibentry{Rokem2009Neuropsych}\\
+  2008 & \bibentry{Eyherabide2008FrontCompNeurosci}\\
+  2006 & \bibentry{Rokem2006JNeurophysiol}\\
+\end{longtable}
+
+%------------------------------------------------
+
+\subsection*{Books}
+
+\years{1954}Einstein, Albert (1954), \emph{Ideas and Opinions}, New York: Random House, ISBN 0-517-00393-7
+
+%------------------------------------------------
+
+\subsection*{Newspaper articles}
+
+\years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
+\years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Teaching}
+
+...
+
+%------------------------------------------------
+
+\section*{Service to the profession}
+
+...
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+{\scriptsize Last updated: \today\- •\- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+\end{center}
+
+%----------------------------------------------------------------------------------------
+\nobibliography{arokemCV}
+
+\end{document}
