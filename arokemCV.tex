@@ -10,7 +10,15 @@
 \usepackage{longtable}
 \usepackage{natbib}
 \usepackage{fontspec}
-\setmainfont{Helvetica}
+
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{1pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\setmainfont{Hoefler Text}
 \nobibliography*
 \bibliographystyle{apalike}
 
@@ -56,6 +64,8 @@
 }{
   \end{list}
 }
+
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
 
 \begin{document}
 %\bibliographystyle{apalike}
@@ -106,46 +116,90 @@
 
 \setlength{\extrarowheight}{10pt}
 
-\begin{longtable}{p{0.5in}|p{5.5in}}
 
-  2017  & \bibentry{lee2017deep} \\
-  & \bibentry{holdgraf2017portable} \\
-  & \bibentry{beyeler2017learning} \\
-  & \bibentry{henriques2017re} \\
-  & \bibentry{Ferizi2017diffusion} \\
-  & \bibentry{Rokem2017JoVWM} \\
-  2016 & \bibentry{DeSimone2016} \\
-  & \bibentry{Cameron_Craddock2016-wc} \\
-  & \bibentry{Gorgolewski2016bids} \\
-  & \bibentry{MezerCoils}\\
-  & \bibentry{Tian2016QSpace}\\
-  2015  & \bibentry{AjinaBlindsight}\\
-  & \bibentry{RokemDSSG}\\
-  & \bibentry{Rokem2015PLoS}\\
-  & \bibentry{Takemura2015CerCor}\\
-  2014&\bibentry{Zheng2014NIPS}\\
-  & \bibentry{Yeatman2014PNAS}\\
-  & \bibentry{Pestilli2014NatMeth}\\
-  & \bibentry{Garyfallidis2014FrontNeuroinf}\\
-  & \bibentry{McDevitt2014VisRes}\\
-  2013 & \bibentry{Kay2013FrontNeurosci}\\
-  & \bibentry{Yoon2013FrontPsychol}\\
-  & \bibentry{Rokem2013FrontCompNeurosci}\\
-  & \bibentry{Kay2013PLoSCompBiol}\\
-  2012 & \bibentry{Kosovicheva2012FrontBehavNeurosci}\\
-  & \bibentry{Rokem2012CerCor}\\
-  2011 & \bibentry{Rokem2011FrontHumNeurosci}\\
-  2010 & \bibentry{Rokem2010CurrBiol}\\
-  & \bibentry{Rokem2010Neuropsychpharmacology}\\
-  & \bibentry{Yoon2010JNeurosci}\\
-  2009 & \bibentry{Eyherabide2009FrontNeurosci}\\
-  & \bibentry{Rokem2009Scipy}\\
-  & \bibentry{Yoon2009SchizBull}\\
-  & \bibentry{Rokem2009BrainRes}\\
-  & \bibentry{Rokem2009Neuropsych}\\
-  2008 & \bibentry{Eyherabide2008FrontCompNeurosci}\\
-  2006 & \bibentry{Rokem2006JNeurophysiol}\\
-\end{longtable}
+  \years{Under review}
+
+  \bibentry{huber2017readingwm} \\
+
+  \bibentry{huppenkothen2017hackweeks}\\
+
+  \bibentry{rokem2017resampling} \\
+
+  \bibentry{yeatman2017afqbrowser}\\
+
+  \years{2017}  \bibentry{lee2017deep} \\
+
+  \bibentry{holdgraf2017portable} \\
+
+  \bibentry{beyeler2017learning} \\
+
+  \bibentry{henriques2017re} \\
+
+  \bibentry{Ferizi2017diffusion} \\
+
+  \bibentry{Rokem2017JoVWM} \\
+
+  \years{2016}  \bibentry{DeSimone2016} \\
+
+  \bibentry{Cameron_Craddock2016-wc} \\
+
+  \bibentry{Gorgolewski2016bids} \\
+
+  \bibentry{MezerCoils}\\
+
+  \bibentry{Tian2016QSpace}\\
+
+  \years{2015}   \bibentry{AjinaBlindsight}\\
+
+  \bibentry{RokemDSSG}\\
+
+  \bibentry{Rokem2015PLoS}\\
+
+  \bibentry{Takemura2015CerCor}\\
+
+  \years{2014} \bibentry{Zheng2014NIPS}\\
+
+  \bibentry{Yeatman2014PNAS}\\
+
+  \bibentry{Pestilli2014NatMeth}\\
+
+  \bibentry{Garyfallidis2014FrontNeuroinf}\\
+
+  \bibentry{McDevitt2014VisRes}\\
+
+  \years{2013} \bibentry{Kay2013FrontNeurosci}\\
+
+  \bibentry{Yoon2013FrontPsychol}\\
+
+  \bibentry{Rokem2013FrontCompNeurosci}\\
+
+  \bibentry{Kay2013PLoSCompBiol}\\
+
+  \years{2012} \bibentry{Kosovicheva2012FrontBehavNeurosci}\\
+
+  \bibentry{Rokem2012CerCor}\\
+
+  \years{2011} \bibentry{Rokem2011FrontHumNeurosci}\\
+
+  \years{2010} \bibentry{Rokem2010CurrBiol}\\
+
+  \bibentry{Rokem2010Neuropsychpharmacology}\\
+
+  \bibentry{Yoon2010JNeurosci}\\
+
+  \years{2009} \bibentry{Eyherabide2009FrontNeurosci}\\
+
+  \bibentry{Rokem2009Scipy}\\
+
+  \bibentry{Yoon2009SchizBull}\\
+
+  \bibentry{Rokem2009BrainRes}\\
+
+  \bibentry{Rokem2009Neuropsych}\\
+
+  \years{2008} \bibentry{Eyherabide2008FrontCompNeurosci}\\
+
+  years{2006} \bibentry{Rokem2006JNeurophysiol}\\
 
 \section*{Funded research}
 \begin{tabular}{llp{12cm}}
@@ -248,7 +302,7 @@
 
 \section*{Invited talks}
 \begin{tabular}{p{0.5in}|p{5.5in}}
- 7/2017 & PNW Prostate Cancer SPORE annual meeting, Seattle, WA \\ 
+ 7/2017 & PNW Prostate Cancer SPORE annual meeting, Seattle, WA \\
  11/2015 & Psychology Department, Indiana University, Bloomington \\
  3/2015 & Berkeley Institute for Data Science\\
  8/2014 & Neuroimaging Laboratory, Washington University, Saint Louis\\

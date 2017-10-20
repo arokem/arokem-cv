@@ -1,4 +1,4 @@
-REPORT=cv_5
+REPORT=arokemCV
 LATEX=xelatex
 BIBTEX=bibtex
 
