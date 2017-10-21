@@ -3,7 +3,8 @@
 
 \usepackage{cite}
 \usepackage{bibentry}
-\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+\usepackage[colorlinks]{hyperref}
 \usepackage{geometry}
 \usepackage{listliketab}
 \usepackage{array}
@@ -18,9 +19,14 @@
 \setlength{\marginparsep}{-1pt} % Slightly increase the distance of the margin years from the contant
 \reversemarginpar
 
-\setmainfont{Hoefler Text}
+\setmainfont{Latin Modern Sans}
+
 \nobibliography*
 \bibliographystyle{apalike}
+
+
+% Link colors
+\hypersetup{linkcolor=SteelBlue,citecolor=blue,filecolor=black,urlcolor=SteelBlue}
 
 % Palatino font
 %\usepackage[T1]{fontenc}
@@ -112,32 +118,38 @@
 	2002 & {\bf B.Sc.} Biology and Psychology, Hebrew University of Jerusalem \\
 \end{tabular}
 
+
+\section*{Publications under review}
+
+\bibentry{huber2017readingwm}
+
+\vspace{4pt}
+
+\bibentry{huppenkothen2017hackweeks}
+
+\vspace{4pt}
+
+\bibentry{rokem2017resampling}
+
+\vspace{4pt}
+
+\bibentry{yeatman2017afqbrowser}
+
+\vspace{4pt}
+
+\bibentry{lee2017perfusion}
+
+\vspace{4pt}
+
+\bibentry{tian2017fouriereap}
+
+\vspace{4pt}
+
+\bibentry{xiao2017oir}
+
+
 \section*{Publications}
 
-\setlength{\extrarowheight}{10pt}
-
-
-  \years{Under review} \bibentry{huber2017readingwm}
-
-  \vspace{4pt}
-
-  \bibentry{huppenkothen2017hackweeks}
-
-  \vspace{4pt}
-
-  \bibentry{rokem2017resampling}
-
-  \vspace{4pt}
-
-  \bibentry{yeatman2017afqbrowser}
-
-  \vspace{4pt}
-
-  \bibentry{lee2017perfusion}
-
-  \vspace{4pt}
-
-  \bibentry{tian2017fouriereap}
 
   \years{2017}
 
@@ -334,7 +346,7 @@ These are software projects that I have led or to which I have contributed core 
 
 \vspace{10 pt}
 
-\years{2017 -- } \emph{Cloudknot}: a pythonic interface to AWS Batch Services.
+\years{2017 -- } \emph{Cloudknot}: a pythonic interface to AWS Batch Services. \url{https://github.com/richford/cloudknot}
 
 \years{2017 -- } \emph{Popylar}: Tracking software usage with Google Analytics. \url{https://popylar.github.io}
 
