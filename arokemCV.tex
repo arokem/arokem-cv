@@ -11,8 +11,6 @@
 \usepackage{longtable}
 \usepackage{natbib}
 \usepackage{fontspec}
-
-
 \usepackage{marginnote} % For margin years
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
 \renewcommand*{\raggedleftmarginnote}{}
@@ -44,8 +42,10 @@
 }
 
 % Customize page headers
-\pagestyle{myheadings}
-\markright{\name}
+%\pagestyle{myheadings}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{\name}
 \thispagestyle{empty}
 
 % Custom section fonts
@@ -124,214 +124,75 @@
 
 
 \section*{Publications under review}
-
-\bibentry{huber2017readingwm}
-
-\vspace{4pt}
-
-\bibentry{huppenkothen2017hackweeks}
-
-\vspace{4pt}
-
-\bibentry{rokem2017resampling}
-
-\vspace{4pt}
-
-\bibentry{yeatman2017afqbrowser}
-
-\vspace{4pt}
-
-\bibentry{lee2017perfusion}
-
-\vspace{4pt}
-
-\bibentry{tian2017fouriereap}
-
-\vspace{4pt}
-
-\bibentry{xiao2017oir}
-
+\begin{enumerate}
+\item \bibentry{huber2017readingwm}
+\item \bibentry{huppenkothen2017hackweeks}
+\item \bibentry{rokem2017resampling}
+\item \bibentry{yeatman2017afqbrowser}
+\item \bibentry{lee2017perfusion}
+\item \bibentry{tian2017fouriereap}
+\item \bibentry{xiao2017oir}
+\end{enumerate}
 
 \section*{Publications}
-
-  \years{2017}
-
-  \bibentry{beyeler2017scipy}
-
-  \vspace{4pt}
-
-  \bibentry{lee2017deep}
-
-  \vspace{4pt}
-
-  \bibentry{holdgraf2017portable}
-
-  \vspace{4pt}
-
-  \bibentry{beyeler2017learning}
-
-  \vspace{4pt}
-
-  \bibentry{henriques2017re}
-
-  \vspace{4pt}
-
-  \bibentry{Ferizi2017diffusion}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2017JoVWM}
-
-  \vspace{4pt}
-
-  \years{2016}  \bibentry{DeSimone2016}
-
-  \vspace{4pt}
-
-  \bibentry{Cameron_Craddock2016-wc}
-
-  \vspace{4pt}
-
-  \bibentry{Gorgolewski2016bids}
-
-  \vspace{4pt}
-
-  \bibentry{MezerCoils}
-
-  \vspace{4pt}
-
-  \bibentry{Tian2016QSpace}
-
-  \vspace{4pt}
-
-  \years{2015}   \bibentry{AjinaBlindsight}
-
-  \vspace{4pt}
-
-  \bibentry{RokemDSSG}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2015PLoS}
-
-  \vspace{4pt}
-
-  \bibentry{Takemura2015CerCor}
-
-  \vspace{4pt}
-
-  \years{2014} \bibentry{Zheng2014NIPS}
-
-  \vspace{4pt}
-
-  \bibentry{Yeatman2014PNAS}
-
-  \vspace{4pt}
-
-  \bibentry{Pestilli2014NatMeth}
-
-  \vspace{4pt}
-
-  \bibentry{Garyfallidis2014FrontNeuroinf}
-
-  \vspace{4pt}
-
-  \bibentry{McDevitt2014VisRes}
-
-  \vspace{4pt}
-
-  \years{2013} \bibentry{Kay2013FrontNeurosci}
-
-  \vspace{4pt}
-
-  \bibentry{Yoon2013FrontPsychol}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2013FrontCompNeurosci}
-
-  \vspace{4pt}
-
-  \bibentry{Kay2013PLoSCompBiol}
-
-  \vspace{4pt}
-
-  \years{2012} \bibentry{Kosovicheva2012FrontBehavNeurosci}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2012CerCor}
-
-  \vspace{4pt}
-
-  \years{2011} \bibentry{Rokem2011FrontHumNeurosci}
-
-  \vspace{4pt}
-
-  \years{2010} \bibentry{Rokem2010CurrBiol}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2010Neuropsychpharmacology}
-
-  \vspace{4pt}
-
-  \bibentry{Yoon2010JNeurosci}
-
-  \vspace{4pt}
-
-  \years{2009} \bibentry{Eyherabide2009FrontNeurosci}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2009Scipy}
-
-  \vspace{4pt}
-
-  \bibentry{Yoon2009SchizBull}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2009BrainRes}
-
-  \vspace{4pt}
-
-  \bibentry{Rokem2009Neuropsych}
-
-  \vspace{4pt}
-
-  \years{2008} \bibentry{Eyherabide2008FrontCompNeurosci}
-
-  \vspace{4pt}
-
-  \years{2006} \bibentry{Rokem2006JNeurophysiol}
-
+  \begin{enumerate}
+  \item \bibentry{beyeler2017scipy}
+  \item \bibentry{lee2017deep}
+  \item \bibentry{holdgraf2017portable}
+  \item \bibentry{beyeler2017learning}
+  \item \bibentry{henriques2017re}
+  \item \bibentry{Ferizi2017diffusion}
+  \item \bibentry{Rokem2017JoVWM}
+  \item \bibentry{DeSimone2016}
+  \item \bibentry{Cameron_Craddock2016-wc}
+  \item \bibentry{Gorgolewski2016bids}
+  \item \bibentry{MezerCoils}
+  \item \bibentry{Tian2016QSpace}
+  \item \bibentry{AjinaBlindsight}
+  \item \bibentry{RokemDSSG}
+  \item \bibentry{Rokem2015PLoS}
+  \item \bibentry{Takemura2015CerCor}
+  \item \bibentry{Zheng2014NIPS}
+  \item \bibentry{Yeatman2014PNAS}
+  \item \bibentry{Pestilli2014NatMeth}
+  \item \bibentry{Garyfallidis2014FrontNeuroinf}
+  \item \bibentry{McDevitt2014VisRes}
+  \item \bibentry{Kay2013FrontNeurosci}
+  \item \bibentry{Yoon2013FrontPsychol}
+  \item \bibentry{Rokem2013FrontCompNeurosci}
+  \item \bibentry{Kay2013PLoSCompBiol}
+  \item \bibentry{Kosovicheva2012FrontBehavNeurosci}
+  \item \bibentry{Rokem2012CerCor}
+  \item \bibentry{Rokem2011FrontHumNeurosci}
+  \item \bibentry{Rokem2010CurrBiol}
+  \item \bibentry{Rokem2010Neuropsychpharmacology}
+  \item \bibentry{Yoon2010JNeurosci}
+  \item \bibentry{Eyherabide2009FrontNeurosci}
+  \item \bibentry{Rokem2009Scipy}
+  \item \bibentry{Yoon2009SchizBull}
+  \item \bibentry{Rokem2009BrainRes}
+  \item \bibentry{Rokem2009Neuropsych}
+  \item \bibentry{Eyherabide2008FrontCompNeurosci}
+  \item \bibentry{Rokem2006JNeurophysiol}
+  \end{enumerate}
 
 \section*{Book chapters}
-
-\years{2018}
-
-\bibentry{rokem2018repro_case_study}
-
-\vspace{4pt}
-
-\bibentry{rokem2018repro_glossary}
-
-\vspace{4pt}
-
-\bibentry{rokem2018repro_assessment}
-
+\begin{enumerate}
+\item \bibentry{rokem2018repro_case_study}
+\item \bibentry{rokem2018repro_glossary}
+\item \bibentry{rokem2018repro_assessment}
+\end{enumerate}
 
 \section*{Funded research}
-  \years{2017-2023} The Bill \& Melinda Gates Foundation: Advance Data Analytic Support for Strategic PNW Partners by eScience Institute (role: co-PI, PI: Bill Howe), \$750,000 \\
-  \years{2017-2020} NSF SI2-SSE: An ecosystem of reusable image analytics pipelines (role: co-PI, PI: Andy Connoly), \$500,000 \\
-  \years{2017-2021} National Institute for Mental Health, R25: Summer Institute in Neuroimaging and Data Science (role: PI), \$974,253\\
-  \years{2017-2018} The Bill \& Melinda Gates Foundation: The King County Analytics Project (role: co-PI, PI: Bryna Hazelton), \$320,000 \\
-  \years{2015-2016} The Bill \& Melinda Gates Foundation: Increasing Data-Driven Decision Making through Data Modeling Techniques and Best Practices (role: co-PI, PI: Bryna Hazelton), \$140,995 \\
-  \years{2015-2018} NSF BDHUB: A Big Data Innovation Hub for the Western United States (role: co-PI, PI: Ed Lazowska), \$201,822\\
-  \years{2012} Stanford CNI Seed grant: Diffusion MRI measured with multiple  b-values (role: PI), \$8,000 \\
-  \years{2012-2015} National Eye Institute, F32: The Anatomical Basis of Texture Perception in Central and Peripheral Visual Field (role: PI),  \$155,346 \\
-  \years{2009-2010} National Institute for Aging, F31: Neural Mechanisms of Perceptual Learning (role: PI), \$22,253 \\
+\years{2017-2023} The Bill \& Melinda Gates Foundation: Advance Data Analytic Support for Strategic PNW Partners by eScience Institute (role: co-PI, PI: Bill Howe), \$750,000 \\
+\years{2017-2020} NSF SI2-SSE: An ecosystem of reusable image analytics pipelines (role: co-PI, PI: Andy Connoly), \$500,000 \\
+\years{2017-2021} National Institute for Mental Health, R25: Summer Institute in Neuroimaging and Data Science (role: PI), \$974,253\\
+\years{2017-2018} The Bill \& Melinda Gates Foundation: The King County Analytics Project (role: co-PI, PI: Bryna Hazelton), \$320,000 \\
+\years{2015-2016} The Bill \& Melinda Gates Foundation: Increasing Data-Driven Decision Making through Data Modeling Techniques and Best Practices (role: co-PI, PI: Bryna Hazelton), \$140,995 \\
+\years{2015-2018} NSF BDHUB: A Big Data Innovation Hub for the Western United States (role: co-PI, PI: Ed Lazowska), \$201,822\\
+\years{2012} Stanford CNI Seed grant: Diffusion MRI measured with multiple  b-values (role: PI), \$8,000 \\
+\years{2012-2015} National Eye Institute, F32: The Anatomical Basis of Texture Perception in Central and Peripheral Visual Field (role: PI),  \$155,346 \\
+\years{2009-2010} National Institute for Aging, F31: Neural Mechanisms of Perceptual Learning (role: PI), \$22,253 \\
 
 \section*{Pending support}
 NIH BRAINI: Computational and Circuit Mechanisms Underlying Rapid Learning (role: Co-I, PI: Beth Buffalo) \\
@@ -395,7 +256,7 @@ scientific eco system, including \emph{Matplotlib}, \emph{Scikit Learn},
 \emph{Scikit Image}, \emph{Jupyter} and \emph{IPython}, as well as many neuroscience-specific software libraries, including \emph{Nibabel}, \emph{Nipype}, \emph{Nipy}.
 
 For a full record of my open-source software contributions, please refer to my
-Github web-page: \url{https://github.com/arokem}
+Github web-page: \\ \url{https://github.com/arokem}
 
 \section*{Selected Conference presentations}
 \begin{enumerate}
@@ -558,6 +419,8 @@ Reviewer for \emph{Annals of Applied Statistics}, \emph{PLoS One}, \emph{Human B
 \vspace{4pt}
 
 \years{2017 --} Member of the International Neuroinformatics Coordinating Facility Training and Education Committee.
+
+\years{2016 -- 2017} Organizer of the ImageXD workshop series on image processing across domains (\url{http://www.imagexd.org/}).
 
 \years{2016 -- } Software Carpentry Instructor Trainer: training and certifying instructors for Software Carpentry.
 
