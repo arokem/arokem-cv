@@ -18,7 +18,7 @@ journal = {under review}
   title        = {Data Camp course: Convolutional neural networks for image processing},
   month        = aug,
   year         = 2018,
-  url          = {https://www.datacamp.com/courses/convolutional-neural-networks-for-image-processing}
+  Note   = "\url{https://www.datacamp.com/courses/convolutional-neural-networks-for-image-processing}",
 }
 
 
@@ -218,13 +218,35 @@ year={2019},
   year={2017},
 }
 
-@Conference{beyeler2017scipy,
+@InProceedings{beyeler2017scipy,
   Author={Beyeler, M and Boynton, G. and Fine, I. and {\bf Rokem, A.}},
   Title = {pulse2percept: A {P}ython-based simulation framework for bionic vision},
-  Booktitle={15th Python in Science Conference (SciPy)},
+  Booktitle={{P}roceedings of the 15th {P}ython in {S}cience {C}onference (SciPy)},
   BookEditors={Huff, K. and Lippa D. and Niederhut, D. and Pacer M.},
   Year={2017}
   }
+
+@InProceedings{ adam_richie-halford-proc-scipy-2018,
+  author    = {Richie-Halford, A and {\bf Rokem, A.}},
+  title     = { {C}loudknot: {A} {P}ython {L}ibrary to {R}un your {E}xisting {C}ode on {A}{W}{S} {B}atch },
+  booktitle = { {P}roceedings of the 17th {P}ython in {S}cience {C}onference (SciPy) },
+  year      = { 2018 },
+  editor    = { {F}atih {A}kici and {D}avid {L}ippa and {D}illon {N}iederhut and {M} {P}acer },
+  doi       = {  }
+}
+
+
+
+
+@InProceedings{ Rokem2009Scipy,
+  author    = {{\bf Rokem, A.} and Trumpis, M. and P\`{e}rez, F.},
+  title     = { {N}itime: time-series analysis for neuroimaging data },
+  booktitle = { {P}roceedings of the 8th {P}ython in {S}cience {C}onference (SciPy) },
+  year      = { 2009 },
+  editor    = {Varoquaux, G. and van der Walt, S. and Millman, J.},
+  doi       = {  }
+}
+
 
 @article{mehta2017comparative,
   title={Comparative evaluation of Big-Data systems on scientific image analytics workloads},
@@ -256,10 +278,13 @@ year={2019},
 
 @article{beyeler2017learning,
   title={Learning to see again: Biological constraints on cortical plasticity and the implications for sight restoration technologies},
-  author={Beyeler, M. and {\bf Rokem, A.} and Boynton, G.M and Fine, I.},
-  journal={Journal of Neural Engineering},
-  doi={10.1088/1741-2552/aa795e},
+  author={Beyeler, Michael and {\bf Rokem, A.} and Boynton, Geoffrey M and Fine, Ione},
+  journal={Journal of neural engineering},
+  volume={14},
+  number={5},
+  pages={051003},
   year={2017},
+  publisher={IOP Publishing}
 }
 
 @article{lee2017deep,
@@ -461,12 +486,15 @@ Year="2015",
 Booktitle="The Bloomberg Data Science 4 Good Exchange",
 BookEditors="Sahuguet, Arnaud",}
 
-
-@Article{MezerCoils,
-Author="Mezer, A. and {\bf Rokem, A.} and Berman, S. and Hastie, T. and Wandell, B.A.",
-Title="Evaluating quantitative proton-density-mapping methods",
-Year="2016",
-Journal="Human Brain Mapping",
+@article{MezerCoils,
+  title={Evaluating quantitative proton-density-mapping methods},
+  author={Mezer, Aviv and Rokem, Ariel and Berman, Shai and Hastie, Trevor and Wandell, Brian A},
+  journal={Human brain mapping},
+  volume={37},
+  number={10},
+  pages={3623--3635},
+  year={2016},
+  publisher={Wiley Online Library}
 }
 
 
@@ -490,13 +518,18 @@ Journal="Human Brain Mapping",
    Pages="e0123272"
 }
 
-@Article{Takemura2015CerCor,
-   Author="Takemura, H.  and Rokem, A.  and Winawer, J.  and Yeatman, J. D.  and Wandell, B. A.  and Pestilli, F. ",
-   Title="{{A} {M}ajor {H}uman {W}hite {M}atter {P}athway {B}etween {D}orsal and {V}entral {V}isual {C}ortex}",
-   Journal="Cereb. Cortex",
-   Year="2015",
-   Pages=" ",
+
+@article{Takemura2015CerCor,
+  title={A major human white matter pathway between dorsal and ventral visual cortex},
+  author={Takemura, Hiromasa and {\bf Rokem, A.} and Winawer, Jonathan and Yeatman, Jason D and Wandell, Brian A and Pestilli, Franco},
+  journal={Cerebral Cortex},
+  volume={26},
+  number={5},
+  pages={2205--2214},
+  year={2015},
+  publisher={Oxford University Press}
 }
+
 
 @Article{Zheng2014NIPS,
    Author="Zheng, C. Y.  and Pestilli, F.  and {\bf Rokem, A.} ",
@@ -682,12 +715,6 @@ Journal="Human Brain Mapping",
    Pages="843--848",
 }
 
-@Conference{Rokem2009Scipy,
-  Author="{\bf Rokem, A.} and Trumpis, M. and P\`{e}rez, F.",
-  Title = "Nitime: time-series analysis for neuroimaging data",
-  Booktitle="8th Python in Science Conference (SciPy)",
-  BookEditors="Varoquaux, G. and van der Walt, S. and Millman J.",
-  Year="2009",}
 
 @Article{Eyherabide2008FrontCompNeurosci,
    Author="Eyherabide, H. G.  and {\bf Rokem, A.}  and Herz, A. V.  and Samengo, I. ",
@@ -722,12 +749,3 @@ Journal="Human Brain Mapping",
 }
 
 
-@InProceedings{ adam_richie-halford-proc-scipy-2018,
-  author    = {Richie-Halford, A and {\bf Rokem, A.}},
-  title     = { {C}loudknot: {A} {P}ython {L}ibrary to {R}un your {E}xisting {C}ode on {A}{W}{S} {B}atch },
-  booktitle = { {P}roceedings of the 17th {P}ython in {S}cience {C}onference },
-  pages     = { 8 - 14 },
-  year      = { 2018 },
-  editor    = { {F}atih {A}kici and {D}avid {L}ippa and {D}illon {N}iederhut and {M} {P}acer },
-  doi       = {  }
-}
