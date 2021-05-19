@@ -15,6 +15,9 @@
 \usepackage{marginnote} % For margin years
 \usepackage{etaremune}
 \usepackage{hyperref}
+%\usepackage{libertine}
+%\usepackage{ETbb}
+\usepackage{mathpazo}
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
 \renewcommand*{\raggedleftmarginnote}{}
 \setlength{\marginparsep}{-1pt} % Slightly increase the distance of the margin years from the contant
@@ -23,7 +26,8 @@
 \usepackage{geometry}
 \geometry{verbose,letterpaper,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
 
-\setmainfont{Latin Modern Sans}
+% \setmainfont{Latin Modern Sans}
+\setmainfont{Palatino}
 
 \nobibliography*
 \bibliographystyle{apalike}
@@ -106,7 +110,9 @@
 \section*{Work Experience}
 \begin{tabular}{ll}
 
-  2020 - & {\bf University of Washington Department of Psychology}\\
+  July 2021 -  & {\bf University of Washington Department of Psychology}\\
+  & \emph{Research Associate Professor}\\
+  2020 - 2021 & {\bf University of Washington Department of Psychology}\\
   & \emph{Research Assistant Professor}\\
   2015-2020 & {\bf University of Washington eScience Institute}\\
   & \emph{Senior Data Scientist}\\
@@ -129,7 +135,11 @@
 
 \section*{Peer-reviewed publications}
   \begin{etaremune}
-  \item \bibentry{rokem2020fractional}
+  \item \bibentry{cieslak2020qsiprep}
+  \item \bibentry{Gau2021-mh}
+  \item \bibentry{mehta2021glaucoma}
+  \item \bibentry{richie-halford-groupyr}
+  \item \bibentry{rokem2020gigascience}
   \item \bibentry{chandio2020buan}
   \item \bibentry{bressler2020slow}
   \item \bibentry{beyeler2019miccai}
@@ -191,10 +201,9 @@
 \section*{Manuscripts in preparation/under review}
 \begin{enumerate}
   \item \bibentry{Kiar2020instabilities}
-  \item \bibentry{mehta2020glaucoma}
   \item \bibentry{henriques2019dki}
   \item \bibentry{richford2020sgl}
-  \item \bibentry{cieslak2020qsiprep}
+  \item \bibentry{Levitis2021-yx}
 \end{enumerate}
 
 \section*{Book chapters}
@@ -211,6 +220,9 @@
 \end{enumerate}
 
 \section*{Funded research}
+\years{2021}: Amazon Web Services Cloud Computing Credits (role: PI), \$5,000 \\
+\years{2021}: UW Azure Cloud Computing Credits (role: PI), \$15,000\\
+\years{2020}: Google Cloud Research Credits (role: PI), \$5,000\\
 \years{2019 - 2022} NIH BRAIN Initiative RF1: A data science toolbox for analysis of Human Connectome Project diffusion MRI (role: PI), \$707,444.\\
 \years{2019 - 2021} NSF HDR: I-DIRSE-FW: Accelerating the Engineering Design and Manufacturing Life-Cycle with Data Science (role: co-PI; PI: Magda Balazinska), \$2,320,979. \\
 \years{2019 - 2024} NIH R01: Aging eyes and aging brains in studying Alzheimer’s disease: modern ophthalmic data collection in the Adult Changes in Thought (ACT) study (role: Senior Personnel; PI: Cecilia Lee). \$3,779,608  \\
@@ -221,8 +233,6 @@
 \years{2017-2020} NSF SI2-SSE: An ecosystem of reusable image analytics pipelines (role: co-PI, PI: Andy Connoly), \$500,000. \\
 \years{2017-2021} NIH/National Institute for Mental Health, R25: Summer Institute in Neuroimaging and Data Science (role: PI), \$974,253.\\
 \years{2019-2023} NSF BDHUBS: Collaborative Proposal: West: Accelerating the Big Data Innovation Ecosystem (role: Senior Personnel, PI: Ed Lazowska), \$201,822.\\
-
-\newpage
 
 \section*{Completed funded research}
 \years{2019} Google TensorFlow Research Cloud credits, 100 TPU hours {role: PI}.\\
@@ -237,6 +247,7 @@
 \years{2009-2010} NIH/National Institute for Aging, National Research Service Award (F31): Neural Mechanisms of Perceptual Learning (role: PI), \$22,253. \\
 
   \section*{Invited talks}
+  \years{6/2021} Oregon State University (Corvalis) and Nanyang Techincal University (Singapore) CN Yang Scholars program (online) \\
   \years{10/2020} Open Data Science Conference West, San Francisco, CA (and online). \\
   \years{9/2020} Amazon Web Services Education: Research Seminar Series. \\
   \years{9/2019} INCF Neuroinformatics congress, Warsaw, Poland (Keynote). \\
@@ -312,6 +323,14 @@ Github web-page: \\ \url{https://github.com/arokem}
 
 \section*{Selected Conference presentations}
 \begin{enumerate}
+
+\item John Kruper, Jason D. Yeatman, Adam Richie-Halford,David Bloom,  Mareike Grotheer, Sendy Caffarra, Gregory Kiar, Iliana I. Karipidis, Ethan Roy, {\bf Ariel Rokem}. Evaluating the reliability of diffusion-MRI based tractometry. Annual Meeting of the Organization for Human Brain Mapping 2021.
+
+\item Adam Richie-Halford, Matthew Cieslak, Alexandre R. Franco, Valerie J. Sydnor, Jason Yeatman, Lei Ai, Michael Milham, Theodore D. Satterthwaite, {\bf Ariel Rokem} (2021). A preprocessed open diffusion derivatives dataset from the Healthy Brain Network. Annual Meeting of the Organization for Human Brain Mapping 2021. Received \emph{Merit Abstract Award}.
+
+\item Mauro Bisson, Josh Romero, Thorsten Kurth, Massimiliano Fatica, Pablo F. Damasceno, Xihe Xie, Adam Richie-Halford, Serge Koudoro, Eleftherios Garyfallidis, {\bf Ariel Rokem} (2021). GPU-accelerated diffusion MRI tractography in DIPY. Inernational Society for Magnetic Resonance in Medicine 2021
+
+\item Rafael Neto Henriques, Marta Correia, Maurizio Marrale, Elizabeth Huber, John Kruper, Serge Koudoro, Jason Yeatman, Eleftherios Garyfallidis, {\bf Ariel Rokem} (2021). Diffusional Kurtosis Imaging in the Diffusion Imaging in Python Project. Inernational Society for Magnetic Resonance in Medicine 2021
 
 \item A. Keshavan, J. Yeatman, {\bf A. Rokem} (2019). Swipes for science: An
 open-source gamified citizen science framework for scalable data annotation.
@@ -473,6 +492,8 @@ stimulation. Cosyne 2017.
 
 \subsection*{Other workshops}
 
+\years{6/2020} Co-organizer (with Catherine Lebel): ``Tractometry : peering into the white matter'', educational course at the annual meeting of the Organization for Human Brain Mapping
+
 \years{9/2019} Organizer and lead instructor: workshop on data science training and collaboration in Hispanic-Serving Institutions (West Big Data Hub and HSI STEM Hub; \url{https://uwescience.github.io/2019-09-16-dstc-workshop/}).
 
 \years{5/2019} Co-organizer (with Andrew Doyle): ``Deep Learning in Human Brain Mapping'', educational course at the annual meeting of the Organization for Human Brain Mapping
@@ -489,7 +510,9 @@ stimulation. Cosyne 2017.
 
 \subsection*{Postdocs}
 
-\years{2020 -- } Adam Richie-Halford (starting June 2020).
+\years{2020 -- } Manjari Narayan (with Jason Yeatman)
+
+\years{2020 -- } Adam Richie-Halford.
 
 \years{2016 -- 2019} Michael Beyeler (with Ione Fine). Currently Assistant
 Professor in CS and Neuroscience at the University of California, Santa-Barbara
@@ -511,11 +534,11 @@ in Fall 2019.
 
 \subsection*{PhD committee service}
 
-\years{2019 -- } Parmita Mehta, UW Computer Science and Engineering.
+\years{2019 -- 2020} Parmita Mehta, UW Computer Science and Engineering.
 
-\years{2017 -- } Chad Curtis, UW Department of Chemical Engineering.
+\years{2017 -- 2020} Chad Curtis, UW Department of Chemical Engineering.
 
-\years{2017} Kivan Polimis, UW Department of Sociology.
+\years{2017 -- 2017} Kivan Polimis, UW Department of Sociology.
 
 \subsection*{Google Summer of Code}
 
