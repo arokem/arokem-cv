@@ -1,0 +1,4 @@
+[codespell]
+skip = arokem.bib
+count =
+quiet-level = 3
