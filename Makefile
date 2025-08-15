@@ -9,4 +9,4 @@ all:
 	$(LATEX) $(REPORT)
 
 clean:
-	rm -f *.out *~ *.dvi *.aux *.log *.blg *.bbl $(REPORT).ps $(REPORT).pdf
+	rm -f *.out *~ *.dvi *.aux *.log *.blg *.bbl $(REPORT).ps
